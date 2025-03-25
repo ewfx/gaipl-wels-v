@@ -28,7 +28,7 @@ embedding_dim = 384  # all-MiniLM-L6-v2 outputs 384-dimensional vectors
 index = faiss.IndexFlatL2(embedding_dim)
 
 # CSV File Path
-csv_path = "customer_support_tickets.csv"
+csv_path = "code/src/customer_support_tickets.csv"
 #csv_path = "data-sets/customer_support_tickets_200K.csv"
 #csv_path = "data-sets/customer_support_tickets_800K.csv"
 chunksize = 5000  # Increase chunk size for better performance
@@ -49,7 +49,7 @@ for chunk_id, df in enumerate(pd.read_csv(csv_path, encoding="utf-8", low_memory
 
         # Encode text in batches with multi-threading
         with torch.cuda.amp.autocast():
-            embeddings = model.encode(df["text"].values(), convert_to_numpy=True,
+            embeddings = model.encode(df["text"].tolist(), convert_to_numpy=True,
                                   batch_size=1024, show_progress_bar=True).astype("float32")
 
         # Add embeddings to FAISS index
@@ -66,7 +66,7 @@ faiss.write_index(index, "faiss_index.idx")
 print("🎉 FAISS index built and saved successfully!")
 print(f"📌 Total Records Indexed: {index.ntotal}")
 
-subprocess.check_call([sys.executable, "-m", "pip", "install", "rapidfuzz", "pandas", "faiss-cpu"])
+subprocess.check_call([sys.executable, "-m", "pip", "install", "-U", "rapidfuzz", "pandas", "faiss-cpu"])
 #!pip install rapidfuzz pandas faiss-cpu
 from rapidfuzz import fuzz
 import pandas as pd

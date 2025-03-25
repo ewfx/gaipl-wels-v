@@ -37,24 +37,30 @@ Describe the major technical or non-technical challenges your team encountered.
 
 ## 🏃 How to Run
 1. Clone the repository  
-   ```sh
-   git clone https://github.com/your-repo.git
+   ```sh 
+   git clone https://github.com/ewfx/gaipl-wels-v.git
    ```
 2. Install dependencies  
    ```sh
-   npm install  # or pip install -r requirements.txt (for Python)
+   install.sh
+  ```bat
+   install.bat
    ```
 3. Run the project  
    ```sh
-   npm start  # or python app.py
+   run.sh
+  ```bat
+   run.bat
    ```
 
 ## 🏗️ Tech Stack
-- 🔹 Frontend: React / Vue / Angular
-- 🔹 Backend: Node.js / FastAPI / Django
-- 🔹 Database: PostgreSQL / Firebase
-- 🔹 Other: OpenAI API / Twilio / Stripe
+- 🔹 Frontend: Gradio
+- 🔹 Backend: Python
+- 🔹 Other: ChatGPT,Hugging Face Sentense Tranformer-"all-MiniLM-L6-v2" Model
+-   
 
 ## 👥 Team
-- **Your Name** - [GitHub](#) | [LinkedIn](#)
-- **Teammate 2** - [GitHub](#) | [LinkedIn](#)
+- **LALITHA DARAPUREDDI** - [GitHub](#) | [LinkedIn](#)
+- **JANAKI REDDY GUNDA** - [GitHub](#) | [LinkedIn](#)
+- **DAMODAR KONIREDDY** - [GitHub](#) | [LinkedIn](#)
+- **ISHWARYA THIRUNAGARI** - [GitHub](#) | [LinkedIn](#)

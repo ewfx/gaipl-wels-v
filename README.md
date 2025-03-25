@@ -56,11 +56,11 @@ Describe the major technical or non-technical challenges your team encountered.
 ## 🏗️ Tech Stack
 - 🔹 Frontend: Gradio
 - 🔹 Backend: Python
-- 🔹 Other: ChatGPT,Sentense Tranformer Model
+- 🔹 Other: ChatGPT,Hugging Face Sentense Tranformer-"all-MiniLM-L6-v2" Model
 -   
 
 ## 👥 Team
+- **LALITHA DARAPUREDDI** - [GitHub](#) | [LinkedIn](#)
 - **JANAKI REDDY GUNDA** - [GitHub](#) | [LinkedIn](#)
 - **DAMODAR KONIREDDY** - [GitHub](#) | [LinkedIn](#)
-- **LALITHA DARAPUREDDI ** - [GitHub](#) | [LinkedIn](#)
-- **ISHWARYA ** - [GitHub](#) | [LinkedIn](#)
+- **ISHWARYA THIRUNAGARI** - [GitHub](#) | [LinkedIn](#)

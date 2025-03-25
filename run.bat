@@ -14,4 +14,4 @@ if %errorlevel% neq 0 (
 
 :: Run the Python script
 echo Running %SCRIPT_NAME%...
-python %SCRIPT_NAME%
+py %SCRIPT_NAME%

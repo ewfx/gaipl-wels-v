@@ -28,10 +28,10 @@ embedding_dim = 384  # all-MiniLM-L6-v2 outputs 384-dimensional vectors
 index = faiss.IndexFlatL2(embedding_dim)
 
 # CSV File Path
-#csv_path = "data-sets/customer_support_tickets.csv"
+csv_path = "customer_support_tickets.csv"
 #csv_path = "data-sets/customer_support_tickets_200K.csv"
-csv_path = "data-sets/customer_support_tickets_800K.csv"
-chunksize = 25000  # Increase chunk size for better performance
+#csv_path = "data-sets/customer_support_tickets_800K.csv"
+chunksize = 5000  # Increase chunk size for better performance
 
 # Track total rows processed
 total_rows = 0

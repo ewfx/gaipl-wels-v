@@ -43,10 +43,14 @@ Describe the major technical or non-technical challenges your team encountered.
 2. Install dependencies  
    ```sh
    install.sh
+  ```bat
+   install.bat
    ```
 3. Run the project  
    ```sh
    run.sh
+  ```bat
+   run.bat
    ```
 
 ## 🏗️ Tech Stack
